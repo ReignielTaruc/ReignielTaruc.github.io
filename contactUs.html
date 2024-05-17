@@ -34,3 +34,40 @@
 </nav>
 <hr>
 </header>
+
+
+
+
+
+
+
+<script>
+        
+    document
+    .getElementById("search-button")
+    .addEventListener("click", function () {
+      var searchQuery = document
+        .getElementById("search-input")
+        .value.toLowerCase();
+    
+      switch (searchQuery) {
+        case "index":
+          window.location.href = "index.html";
+          break;
+        case "home":
+          window.location.href = "home.html";
+          break;
+        case "product":
+          window.location.href = "product.html";
+          break;
+        case "about us":
+          window.location.href = "aboutUs.html";
+          break;
+        case "contact us":
+          window.location.href = "contactUs.html";
+          break;
+        default:
+          alert("No matching page found for the search query.");
+      }
+    });
+    </script>
