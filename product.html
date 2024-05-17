@@ -17,22 +17,25 @@
             <input type="text" id="search-input" placeholder="Search...">
             <button id="search-button">Search</button>
         </div>
-        <div class="shopping">
-            <img src="images/shopping.svg" class="icon-cart" alt="Shopping Cart">
-            <span class="cart-count">0</span>
+
+        <div class="panel">
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <div class="container">
+                <div class="shopping">
+                    <li>
+                        <img src="images/shopping.svg" class="icon-cart">
+                        <span class="cart-count">0</span>
+                    </li>
+                </div>
+            </ul>
         </div>
     </div>
-    <div class="panel">
-        <ul>
-            <li><a href="Index.html">Index</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            <li><a href="ContactUs.html">Contact Us</a></li>
-        </ul>
-    </div>
+    <hr>
 </header>
-
-<hr>
 
 <div class="list"></div>
 <div class="card">
@@ -52,7 +55,7 @@
             <p>Heaven's Elixir: Where luxury meets essence. Discover a realm of sophistication and refinement in every drop,
                  crafted to elevate your senses and leave an indelible mark of elegance. Experience the epitome of indulgence with
                   Heaven's Elixir.</p>
-            <a href="home.html">HOME</a>
+            <a href="home.html"><button><b>HOME</b></button></a>
         </td>
         <td class="slidea">
             <a href="#AboutJoMalone">
@@ -87,7 +90,7 @@
 <hr>
 
 <div class="JoMalone">
-    <h2 id="AboutJoMalone">Jo Malone Men's Collection</h2>
+    <h1 id="AboutJoMalone">Jo Malone Men's Collection</h1>
 </div>
 <table class="center">
     <tr>
@@ -97,17 +100,39 @@
                 <div class="essential">
                     <img src="images/jomalonelogo.png" alt="Lime Basil & Mandarin Cologne">
                     <div class="desc" onclick="addToCart('Lime Basil & Mandarin Cologne', 0)">
-                        <h5>Lime Basil & Mandarin Cologne</h5>
+                        <h1>Lime Basil & Mandarin Cologne</h1>
                         <p>Peppery Basil and aromatic white thyme bring unexpected twist</p>
                         <h5><b>Add to Cart</b> <br> PHP 6,500.00 | 50ml</h5>
                     </div>
                 </div>
             </section>
         </td>
+
+        <td>
+            <div class="essential">
+                <img src="images/jomalonelogo.png" alt="Fig & Lotus Flower Cologne">
+                <div class="desc" onclick="addToCart('Fig & Lotus Flower Cologne', 1)">
+                    <h1>Fig & Lotus Flower Cologne</h1>
+                    <p>Luscious lotus flowers skim the surface of a shimmering pond in the ancient Hanging Garden.</p>
+                    <h5><b>Add to Cart</b> <br> PHP 9,300.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+
+        <td>
+            <div class="essential">
+                <img src="images/jomalonelogo.png" alt="Wood Sage & Sea Salt Cologne">
+                <div class="desc" onclick="addToCart('Wood Sage & Sea Salt Cologne', 2)">
+                    <h1>Wood Sage & Sea Salt Cologne</h1>
+                    <p>Escape the everyday along the windswept shore.</p>
+                    <h5><b>Add to Cart</b> <br> PHP 6,500 | 50ml</h5>
+                </div>
+            </div>
+        </td>
     </tr>
 </table>
 
-<hr>
+<hr><br>
 
 <div class="Ck">
     <h1 id="AboutCk">Calvin Klein Men's Collection</h1>
@@ -147,7 +172,7 @@
     </tr>
 </table>
 
-<hr>
+<hr><br>
 
 <div class="Versace">
     <h1 id="AboutVersace">Versace Men's Collection</h1>
@@ -187,7 +212,7 @@
     </tr>
 </table>
 
-<hr>
+<hr><br>
 
 <div class="Mont">
     <h1 id="AboutMont">Mont Blanc Men's Collection</h1>
@@ -227,32 +252,38 @@
     </tr>
 </table>
 
-<script>
-document.getElementById("search-button").addEventListener("click", function () {
-  var searchQuery = document.getElementById("search-input").value.toLowerCase();
-
-  switch (searchQuery) {
-    case "index":
-      window.location.href = "Index.html";
-      break;
-    case "home":
-      window.location.href = "home.html";
-      break;
-    case "product":
-      window.location.href = "product.html";
-      break;
-    case "about us":
-      window.location.href = "aboutus.html";
-      break;
-    case "contact us":
-      window.location.href = "contactus.html";
-      break;
-    default:
-      alert("No matching page found for the search query.");
-  }
-});
-</script>
-<script src="shop.js"></script>
 </body>
+<script>
+        
+    document
+    .getElementById("search-button")
+    .addEventListener("click", function () {
+      var searchQuery = document
+        .getElementById("search-input")
+        .value.toLowerCase();
+    
+      switch (searchQuery) {
+        case "index":
+          window.location.href = "index.html";
+          break;
+        case "home":
+          window.location.href = "home.html";
+          break;
+        case "product":
+          window.location.href = "product.html";
+          break;
+        case "about us":
+          window.location.href = "aboutus.html";
+          break;
+        case "contact us":
+          window.location.href = "contactus.html";
+          break;
+        default:
+          alert("No matching page found for the search query.");
+      }
+    });
+    </script>
+<script src="shop.js"></script>
 </html>
+
 
