@@ -109,3 +109,78 @@ body {
     transform: translateY(0);
   }
   /* design */
+
+  .upper {
+    text-align: center;
+    margin: 0;
+    width: 93%;
+    height: 40%;
+    padding: 70px 50px;
+    background-image: url("images/perfumehome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.up1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+    font-family: "Noto Serif", serif;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.creator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.outer-rectangle {
+  margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #000;
+    background-color: rgb(240, 177, 77);
+}
+
+.inner-rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.rectangle-table {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 20px; /* Adjust spacing between cells */
+}
+
+  
