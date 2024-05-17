@@ -3,34 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AboutUs</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="AboutUsStyle.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100.
-    .900&family=Sedan:ital@0;1&family=Suranna&family=Teko:wght@300..700&display=swap" 
-    rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&family=Suranna&family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-<div class="container">
-    <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Search..."> 
-        <button id="search-button">Search</button> 
+    <header>
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search..."> 
+                <button id="search-button">Search</button> 
+            </div>
+            <div class="panel">
+                <ul>  
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <div class="upper">
+        <h1 class="up1">Welcome and enjoy learning<br> the history and success of
+        <br> Heaven's Elixir</h1>
     </div>
-
-    <div class="panel">
-        <ul>  
-            <li><a href="index.html">Index</a></li>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Product.html">Product</a></li>
-            <li><a href="ContactUs.html">Contact Us</a></li>
-        </ul>
+    <div class="content-center">
+        <div class="creator-container">
+            <img src="2x2.jpg" alt="Placeholder Image">
+            <div class="creator">
+                <h4>CREATOR OF HEAVEN'S ELIXIR</h4>
+                <h5>CEO: REIGNIEL TARUC</h5>
+            </div>
+        </div>
+        <table class="rectangle-table">
+            <tr>
+                <td>
+                    <div class="outer-rectangle">
+                        <div class="inner-rectangle">
+                            <div>
+                                <h2>History and Growth of Heaven's Elixir</h2>
+                                <p>Heaven's Elixir, established in 2024, began as a small boutique with a singular mission:
+                                    to bring the finest luxury goods to discerning customers. Our journey from a modest start-up 
+                                    to a recognized name in the retail industry is a testament to our unwavering commitment to quality
+                                    and sophistication.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="outer-rectangle">
+                        <div class="inner-rectangle">
+                            <div>
+                                <h2>The Beginning</h2>
+                                <p>In the early days, Heaven's Elixir was a humble shop with a carefully curated selection of luxury 
+                                    perfumes and personal care products. Our founder's vision was clear: to create a sanctuary where 
+                                    customers could experience the epitome of elegance and refinement. With an emphasis on customer service 
+                                    and product excellence, we quickly built a loyal following.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <div class="outer-rectangle">
+                        <div class="inner-rectangle">
+                            <div>
+                                <h2>Expansion and Recognition</h2>
+                                <p>As word of our exceptional offerings spread, so did our reputation. By exclusively featuring products
+                                    from renowned brands like Calvin Klein, Jo Malone, Versace, and Mont Blanc, we set ourselves apart in
+                                    a crowded marketplace. This focus on quality helped us to gain recognition and trust among luxury 
+                                    connoisseurs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="outer-rectangle">
+                        <div class="inner-rectangle">
+                            <div>
+                                <h2>Universal Recognition</h2>
+                                <p>Today, Heaven's Elixir stands as a beacon of trust and sophistication in the realm of retail.
+                                    Our dedication to curating an exquisite collection has garnered us universal recognition. 
+                                    Connoisseurs from around the world trust Heaven's Elixir to provide the unparalleled allure 
+                                    of the top brands in luxury goods.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
-</div>
-</nav>
-<hr>
-</header>
+    <script>
+        
+        document
+        .getElementById("search-button")
+        .addEventListener("click", function () {
+          var searchQuery = document
+            .getElementById("search-input")
+            .value.toLowerCase();
+        
+          switch (searchQuery) {
+            case "index":
+              window.location.href = "index.html";
+              break;
+            case "home":
+              window.location.href = "home.html";
+              break;
+            case "product":
+              window.location.href = "product.html";
+              break;
+            case "about us":
+              window.location.href = "aboutus.html";
+              break;
+            case "contact us":
+              window.location.href = "contactus.html";
+              break;
+            default:
+              alert("No matching page found for the search query.");
+          }
+        });
+        </script>
+    </body>
+</html>
