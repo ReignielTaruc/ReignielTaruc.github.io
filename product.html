@@ -17,29 +17,27 @@
             <input type="text" id="search-input" placeholder="Search...">
             <button id="search-button">Search</button>
         </div>
-
-        <div class="panel">
-            <ul>
-                <li><a href="index.html">Index</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="ContactUs.html">Contact Us</a></li>
-                <div class="container">
-                <div class="shopping">
-                    <li>
-                        <img src="images/shopping.svg" class="icon-cart">
-                        <span class="cart-count">0</span>
-                    </li>
-                </div>
-            </ul>
+        <div class="shopping">
+            <img src="images/shopping.svg" class="icon-cart">
+            <span class="cart-count">0</span>
         </div>
     </div>
-    <hr>
 </header>
+
+<div class="panel">
+    <ul>
+        <li><a href="Index.html">Index</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+</div>
+
+<hr>
 
 <div class="list"></div>
 <div class="card">
-    <h1>SHOPPING CART</h1> 
+    <h1>SHOPPING CART</h1>
     <ul class="ProductList"></ul>
     <div class="checkOut">
         <div class="total">0</div>
@@ -87,6 +85,7 @@
         </td>
     </tr>
 </table>
+
 <hr>
 
 <div class="JoMalone">
@@ -132,7 +131,7 @@
     </tr>
 </table>
 
-<hr><br>
+<hr>
 
 <div class="Ck">
     <h1 id="AboutCk">Calvin Klein Men's Collection</h1>
@@ -172,7 +171,7 @@
     </tr>
 </table>
 
-<hr><br>
+<hr>
 
 <div class="Versace">
     <h1 id="AboutVersace">Versace Men's Collection</h1>
@@ -212,7 +211,7 @@
     </tr>
 </table>
 
-<hr><br>
+<hr>
 
 <div class="Mont">
     <h1 id="AboutMont">Mont Blanc Men's Collection</h1>
@@ -252,38 +251,32 @@
     </tr>
 </table>
 
-</body>
 <script>
-        
-    document
-    .getElementById("search-button")
-    .addEventListener("click", function () {
-      var searchQuery = document
-        .getElementById("search-input")
-        .value.toLowerCase();
-    
-      switch (searchQuery) {
-        case "index":
-          window.location.href = "index.html";
-          break;
-        case "home":
-          window.location.href = "home.html";
-          break;
-        case "product":
-          window.location.href = "product.html";
-          break;
-        case "about us":
-          window.location.href = "aboutus.html";
-          break;
-        case "contact us":
-          window.location.href = "contactus.html";
-          break;
-        default:
-          alert("No matching page found for the search query.");
-      }
-    });
-    </script>
-<script src="shop.js"></script>
-</html>
+document.getElementById("search-button").addEventListener("click", function () {
+  var searchQuery = document.getElementById("search-input").value.toLowerCase();
 
+  switch (searchQuery) {
+    case "index":
+      window.location.href = "Index.html";
+      break;
+    case "home":
+      window.location.href = "home.html";
+      break;
+    case "product":
+      window.location.href = "product.html";
+      break;
+    case "about us":
+      window.location.href = "aboutus.html";
+      break;
+    case "contact us":
+      window.location.href = "contactus.html";
+      break;
+    default:
+      alert("No matching page found for the search query.");
+  }
+});
+</script>
+<script src="shop.js"></script>
+</body>
+</html>
 
