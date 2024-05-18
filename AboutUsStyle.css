@@ -8,7 +8,6 @@ body {
   
   .navbar {
     text-align: center;
-    /* Center the logo horizontally */
   }
   
   .container {
@@ -180,7 +179,7 @@ img {
     width: 100%;
     text-align: center;
     border-collapse: separate;
-    border-spacing: 20px; /* Adjust spacing between cells */
+    border-spacing: 20px; 
 }
 
   

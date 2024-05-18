@@ -226,31 +226,31 @@ hr{
 }
 
 table img {
-    max-width: 40%; /* Adjust the max-width as needed */
+    max-width: 40%;
     height: auto;
 }
 
 .center {
-    margin: 0 auto; /* This centers the table horizontally */
-    text-align: center; /* This centers the content inside the table cells */
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .product-cell {
-    width: 30%; /* Set the width of each table cell to 30% */
-    margin: 0 1%; /* Add margins between table cells */
-    text-align: center; /* Center the content inside table cells */
+    width: 30%; 
+    margin: 0 1%; 
+    text-align: center; 
 }
 
 .essential {
-    display: inline-block; /* Ensure each product is displayed inline */
-    width: 90%; /* Adjust the width of each product container */
-    margin: 0 auto; /* Center the product container horizontally */
-    height: auto; /* Allow the height to adjust based on content */
+    display: inline-block; 
+    width: 90%; 
+    margin: 0 auto; 
+    height: auto; 
     border-radius: 5px;
     box-shadow: 0.5rem 0.4rem rgb(239, 228, 112);
     overflow: hidden;
     position: relative;
-    perspective: 1000px; /* Add perspective for 3D effect */
+    perspective: 1000px; 
     cursor: pointer;
 }
 
@@ -258,12 +258,12 @@ table img {
     position: absolute;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d; /* Preserve 3D space */
-    transition: transform 0.5s; /* Smooth transition */
+    transform-style: preserve-3d; 
+    transition: transform 0.5s; 
 }
 
 .essential:hover .flipper {
-    transform: rotateY(180deg); /* Rotate on hover */
+    transform: rotateY(180deg);
 }
 
 .front,
@@ -271,17 +271,17 @@ table img {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hide the back face */
+    backface-visibility: hidden; 
 }
 
 .front {
     z-index: 2;
-    /* Set front face styles */
+   
 }
 
 .back {
-    transform: rotateY(180deg); /* Initially hide back face */
-    /* Set back face styles */
+    transform: rotateY(180deg); 
+    
 }
 
 .desc {
@@ -292,23 +292,23 @@ table img {
     background-color: rgba(167, 132, 9, 0.879);
     color: #fff;
     padding: 10px;
-    transition: transform 0.5s; /* Smooth transition */
-    transform-origin: bottom; /* Set transform origin to bottom */
-    transform: rotateX(90deg); /* Initially hide description */
+    transition: transform 0.5s; 
+    transform-origin: bottom;
+    transform: rotateX(90deg);
 }
 
 .essential:hover .desc {
-    transform: rotateX(0deg); /* Rotate to show description */
+    transform: rotateX(0deg);
 }
-/*cart*/
+
 .container .shopping {
     position: relative;
 }
 
 .container .shopping .cart-count {
     position: absolute;
-    top: 18px; /* Adjust as needed */
-    right: 35px; /* Adjust as needed */
+    top: 18px; 
+    right: 35px; 
     display: flex;
     width: 20px;
     height: 20px;
@@ -491,3 +491,37 @@ li > div {
     text-align: center;
 }
 
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

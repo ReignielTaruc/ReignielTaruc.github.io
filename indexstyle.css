@@ -164,11 +164,11 @@ footer {
 }
 
 .square-picture {
-  width: 450px; /* Adjust width as needed */
-  height: 450px; /* Make it square */
+  width: 450px; 
+  height: 450px; 
   position: absolute;
   top: 45%;
-  right: 15%; /* Adjust the distance from the right */
+  right: 15%; 
   transform: translateY(-50%);
   border-radius: 10px;
 }

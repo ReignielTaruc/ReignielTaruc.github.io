@@ -120,14 +120,43 @@ function changeQuantity(key, quantity) {
     reloadCard();
 }
 
-document.querySelector('.Confirm').addEventListener('click', () => {
+document.querySelector('.Confirm').addEventListener('click', function() {
+    document.getElementById("orderModal").style.display = "block";
+    document.getElementById("modalTotal").textContent = document.querySelector('.total').textContent;
+
+    let productListContainer = document.getElementById("modalProductList");
+    productListContainer.innerHTML = "";
+
+    listCards.forEach(function(product) {
+        let li = document.createElement("li");
+        li.textContent = `${product.name} - Quantity: ${product.quantity}`;
+        productListContainer.appendChild(li);
+    });
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+
+    document.getElementById("orderModal").style.display = "none";
+});
+
+// Close the order summary
+window.addEventListener('click', function(event) {
+    var modal = document.getElementById("orderModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
+
+document.getElementById("confirmOrderButton").addEventListener('click', () => {
     if (listCards.length === 0) {
         alert('Your cart is currently empty. Please add items to your cart before proceeding with your order.');
     } else {
-        if (confirm(`Do you want to continue with this order? Total: ₱${total.innerText}`)) {
+        if (confirm(`Do you want to continue with this order? Total: ₱${document.querySelector('.total').textContent}`)) {
             alert('Thank you for your order!');
             listCards = [];
             reloadCard();
+            document.getElementById("orderModal").style.display = "none";
         }
     }
 });

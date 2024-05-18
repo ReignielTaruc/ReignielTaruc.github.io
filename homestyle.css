@@ -8,7 +8,6 @@ body {
 
 .navbar {
   text-align: center;
-  /* Center the logo horizontally */
 }
 
 .container {
@@ -166,7 +165,6 @@ header {
   display: flex;
   margin: 30px;
   width: 100%;
-  /* Set width to 100% to occupy the full width of the header */
 }
 
 .head-menu ul {
@@ -175,9 +173,7 @@ header {
   margin-left: 100px;
   padding: 0;
   display: flex;
-  /* Make the list items flex items */
   justify-content: space-between;
-  /* Distribute the list items evenly */
   width: 150%;
 }
 
@@ -200,7 +196,6 @@ header {
 .row {
   display: flex;
   justify-content: center;
-  /* Center the content horizontally */
   margin-left: 2%;
   margin-top: 2%;
 }
@@ -215,9 +210,7 @@ header {
 .pic4 {
   text-align: center;
   width: 300px;
-  /* Adjust the width as needed */
   height: 300px;
-  /* Set the height to match the width */
   padding: 30px;
 }
 
@@ -227,13 +220,9 @@ header {
 .pic4 img {
   display: block;
   width: 100%;
-  /* Ensure the image fills its container */
   height: 100%;
-  /* Ensure the image fills its container */
   object-fit: cover;
-  /* Maintain aspect ratio */
   border-radius: 10px;
-  /* Add rounded corners */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -304,5 +293,4 @@ td {
 
 body {
   padding-bottom: 50px;
-  /* Add padding to the bottom */
 }
