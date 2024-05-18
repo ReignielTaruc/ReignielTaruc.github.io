@@ -8,7 +8,7 @@ body {
   
   .navbar {
     text-align: center;
-    /* Center the logo horizontally */
+    
   }
   
   .container {
@@ -108,3 +108,95 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  
+  .map {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+   
+}
+
+.form-card h2 {
+    margin-bottom: 40px;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-card form input,
+.form-card form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Noto Serif', serif;
+}
+
+.form-card form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-family: 'Noto Serif', serif;
+}
+
+.form-card form button:hover {
+    background-color: #0056b3;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-media img:hover {
+  transform: scale(1.2); 
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  padding: 4px;
+}

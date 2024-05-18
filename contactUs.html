@@ -34,11 +34,48 @@
 </nav>
 <hr>
 </header>
+<div class="content-center">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61784.914589921216!2d121.073448
+        4!3d14.5672982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7ea14ea41f1%3A0x5951aed87ce31a13!2sPasig%20
+        Rainforest%20Park!5e0!3m2!1sen!2sph!4v1716018557255!5m2!1sen!2sph" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
-
-
-
-
+    
+    <div class="form-card">
+        <h2>Send Us a Message</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="contact-details">
+        <p><strong>Address:</strong> Heaven's Elixir</p>
+        <p><strong>Telephone:</strong> +9272834205</p>
+        <p><strong>Email:</strong> heaven'selixir@gmail.com</p>
+    </div>
+    <br><br><br><br><br><br>
+<footer>
+        <div class="container">
+          <p>&copy; 2024 Heaven's Elixir. All rights reserved.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="youtube.png" alt="YouTube">
+        </a>
+    </div>
+</footer>
 
 
 <script>
@@ -70,4 +107,15 @@
           alert("No matching page found for the search query.");
       }
     });
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        var name = document.querySelector('input[name="name"]').value;
+        var email = document.querySelector('input[name="email"]').value;
+        var message = document.querySelector('textarea[name="message"]').value;
+
+        alert(`Thank you for your message!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    });
+
     </script>
