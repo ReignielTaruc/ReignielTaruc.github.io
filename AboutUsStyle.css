@@ -1,185 +1,286 @@
 body {
-    background-image: url("images/elixirbg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  .navbar {
-    text-align: center;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  header {
-    background-color: rgb(200, 112, 112);
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .container a {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-  }
-  
-  .container a:last-child {
-    margin-right: 10px;
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .search-bar button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-  }
-  
-  .search-bar button:hover {
-    background-color: #0056b3;
-  }
+  background-image: url("images/elixirbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-  .panel ul {
-    display: flex;
-    list-style-type: none;
-  }
-  
-  .panel ul li {
-    margin-right: 40px;
-  }
-  
-  .panel ul li a {
-    font-size: 22px;
-    color: #000;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: inline-block;
-    border: none;
-  }
-  
-  .panel ul li a:hover {
-    font-weight: bold;
-  }
-  
-  .panel {
-    padding-bottom: 1px;
-    color: blue;
-    position: relative;
-  }
-  
-  .panel::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(3px);
-    background: rgb(106, 32, 32);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-  
-  .panel:hover::after {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  /* design */
+html {
+  scroll-behavior: smooth;
+}
 
-  .upper {
-    text-align: center;
-    margin: 0;
-    width: 93%;
-    height: 40%;
-    padding: 70px 50px;
-    background-image: url("images/perfumehome.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.navbar, .container {
+  text-align: center;
+}
+
+header {
+  background-color: rgb(200, 112, 112);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.container a:last-child {
+  margin-right: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.panel ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.panel ul li {
+  margin-right: 40px;
+}
+
+.panel ul li a {
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.panel ul li a:hover {
+  font-weight: bold;
+}
+
+.panel {
+  padding-bottom: 1px;
+  color: blue;
+  position: relative;
+}
+
+.panel::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(3px);
+  background: rgb(106, 32, 32);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.panel:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.upper {
+  text-align: center;
+  margin: 0;
+  width: 93%;
+  height: 40%;
+  padding: 70px 50px;
+  background-image: url("images/perfumehome.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .up1 {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 50px;
-    font-family: "Noto Serif", serif;
-    color: white;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 50px;
+  font-family: "Noto Serif", serif;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .content-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .creator-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 50px;
 }
 
 .outer-rectangle {
   margin-left: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 300px;
-    border: 2px solid #000;
-    background-color: rgb(240, 177, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  border: 2px solid #000;
+  background-color: rgb(240, 177, 77);
 }
 
 .inner-rectangle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 250px;
-    border: 2px solid #000;
-    text-align: center;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 250px;
+  border: 2px solid #000;
+  text-align: center;
+  padding: 10px;
 }
 
 .rectangle-table {
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    border-collapse: separate;
-    border-spacing: 20px; 
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 20px; 
 }
 
-  
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .search-bar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .search-bar input[type="text"] {
+      width: 80%;
+      margin-bottom: 10px;
+  }
+
+  .panel ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .panel ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .outer-rectangle {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar input[type="text"] {
+      width: 100%;
+  }
+
+  .search-bar button {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .panel ul li a {
+      font-size: 18px;
+  }
+
+  .upper {
+      padding: 50px 20px;
+  }
+
+  .up1 {
+      font-size: 40px;
+  }
+
+  .outer-rectangle {
+      width: 80%;
+  }
+
+  .inner-rectangle {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+  }
+
+  .search-bar input[type="text"] {
+      width: 100%;
+      font-size: 14px;
+      padding: 5px;
+  }
+
+  .search-bar button {
+      width: 100%;
+      padding: 5px;
+      font-size: 14px;
+      margin-left: 0;
+  }
+
+  .panel ul li a {
+      font-size: 16px;
+  }
+
+  .upper {
+      padding: 30px 10px;
+  }
+
+  .up1 {
+      font-size: 30px;
+  }
+
+  .outer-rectangle {
+      width: 90%;
+  }
+
+  .inner-rectangle {
+      width: 95%;
+  }
+}

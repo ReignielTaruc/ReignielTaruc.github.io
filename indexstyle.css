@@ -3,16 +3,24 @@ body {
   background-image: url("images/elixirbgline.png");
   background-size: cover;
   background-position: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.nav {
-  margin-top: -40px;
+
+.section {
+  margin-top: -30px;
+  margin-left: 50px;
+  
 }
+
 .container a {
   color: white;
   text-decoration: none;
@@ -21,10 +29,6 @@ body {
 
 .container a:last-child {
   margin-right: 10px;
-}
-
-body {
-  font-family: Arial, sans-serif;
 }
 
 .fptitle h1 {
@@ -97,16 +101,6 @@ body {
   font-family: "Teko", sans-serif;
   font-size: 23px;
   letter-spacing: 2px;
-}
-
-.panel :hover::before {
-  opacity: 1;
-  transition-duration: 0.85s;
-  transform: translate3d(-50%, -50%, 0) scale3d(1.2, 1.2, 1.2);
-}
-
-.panel button {
-  padding: 12px 24px;
   background-color: hsl(222, 100%, 95%);
   position: relative;
   border-radius: 50px;
@@ -134,12 +128,17 @@ body {
   opacity: 0;
 }
 
+.panel button:hover::before {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0) scale3d(1.2, 1.2, 1.2);
+}
+
 #description-table {
-  padding-top: 0.5 rem;
+  padding-top: 0.5rem;
   bottom: 20px;
 }
 
-#company-description {
+#article {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -163,20 +162,83 @@ footer {
   width: 100%;
 }
 
-.square-picture {
-  width: 450px; 
-  height: 450px; 
+.aside {
+  width: 450px;
+  height: 450px;
   position: absolute;
-  top: 45%;
-  right: 15%; 
+  top: 40%;
+  right: 15%;
   transform: translateY(-50%);
   border-radius: 10px;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fptitle h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .search-bar input[type="text"], .search-bar button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .fptitle h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .search-bar input[type="text"], .search-bar button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .panel ul li {
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
+  .fptitle h1 {
+    font-size: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #article {
+    font-size: 12px;
+    padding: 10px;
+  }
 
 
-
-
-
-
-
+  footer {
+    padding: 10px 0;
+  }
+}
