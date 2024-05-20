@@ -152,11 +152,6 @@ document.getElementById("confirmOrderButton").addEventListener('click', () => {
     if (listCards.length === 0) {
         alert('Your cart is currently empty. Please add items to your cart before proceeding with your order.');
     } else {
-        const paymentMethod = document.querySelector('input[name="payment"]:checked');
-        if (!paymentMethod) {
-            alert('Please select a payment method.');
-            return;
-        }
         if (confirm(`Do you want to continue with this order? Total: ₱${document.querySelector('.total').textContent}`)) {
             alert('Thank you for your order!');
             listCards = [];
